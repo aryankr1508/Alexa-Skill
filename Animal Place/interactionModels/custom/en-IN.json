@@ -1,0 +1,199 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "animal kingdom",
+      "intents": [
+        {
+          "name": "AnimalIntent",
+          "slots": [
+            {
+              "name": "Item",
+              "type": "List_of_Animals",
+              "samples": [
+                "i choose {Item}",
+                "{Item}"
+              ]
+            }
+          ],
+          "samples": [
+            "{Item}"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "LION",
+              "name": {
+                "value": "lion"
+              }
+            },
+            {
+              "id": "TIGER",
+              "name": {
+                "value": "tiger"
+              }
+            },
+            {
+              "id": "DOG",
+              "name": {
+                "value": "dog"
+              }
+            },
+            {
+              "id": "CAT",
+              "name": {
+                "value": "cat"
+              }
+            },
+            {
+              "id": "ELEPHANT",
+              "name": {
+                "value": "elephant"
+              }
+            },
+            {
+              "id": "DONKEY",
+              "name": {
+                "value": "donkey"
+              }
+            },
+            {
+              "id": "COW",
+              "name": {
+                "value": "cow"
+              }
+            },
+            {
+              "id": "CROW",
+              "name": {
+                "value": "crow"
+              }
+            },
+            {
+              "id": "GIRAFFE",
+              "name": {
+                "value": "giraffe"
+              }
+            },
+            {
+              "id": "MONKEY",
+              "name": {
+                "value": "monkey"
+              }
+            },
+            {
+              "id": "GOAT",
+              "name": {
+                "value": "goat"
+              }
+            },
+            {
+              "id": "PANDA",
+              "name": {
+                "value": "panda"
+              }
+            },
+            {
+              "id": "PEACOCK",
+              "name": {
+                "value": "peacock"
+              }
+            },
+            {
+              "id": "SPARROW",
+              "name": {
+                "value": "sparrow"
+              }
+            },
+            {
+              "id": "PIGEON",
+              "name": {
+                "value": "pigeon"
+              }
+            }
+          ],
+          "name": "List_of_Animals"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "AnimalIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "Item",
+              "type": "List_of_Animals",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "ElicitItemPrompt"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "ItemValidationPrompt"
+                }
+              ]
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "ElicitItemPrompt",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "which animal spelling you want to learn?"
+          }
+        ]
+      },
+      {
+        "id": "ItemValidationPrompt",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I didn\u0027t catch that.  Which recipe did you want?"
+          },
+          {
+            "type": "PlainText",
+            "value": "I don\u0027t know the recipe for {Item} .  Which recipe did you want?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "4"
+}
