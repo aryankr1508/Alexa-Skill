@@ -1,0 +1,36 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "tipsy news headline",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "NewsIntent",
+          "slots": [],
+          "samples": [
+            "tell me tipsy news headlines",
+            "give me some tipsy news headlines",
+            "tipsy news headlines"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "9"
+}

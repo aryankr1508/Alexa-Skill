@@ -1,0 +1,60 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-IN": {
+          "summary": "News Headline is a news skill that tells some news headlines",
+          "examplePhrases": [
+            "Alexa, Start tipsy news headline",
+            "Alexa, Open tipsy news headline",
+            "Alexa, Launch tipsy news headline"
+          ],
+          "keywords": [
+            "news",
+            "news",
+            "headline",
+            "newsheadline",
+            "newsheadlines",
+            "tipsy",
+            "tipsynewsheadline",
+            "tipsynewsheadline",
+            "tipsy",
+            "news",
+            "headlines",
+            "tipsynews",
+            "tipsyheadlines"
+          ],
+          "name": "News Headline",
+          "description": "News Headline is a news skill that tells some news headlines. News Headline tells the news of India. It delivers the news headlines every day. You can use this skill every day for only one time.",
+          "smallIconUri": "file://assets/images/en-IN_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-IN_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "open tipsy news headline\ntell me tipsy news headlines",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:897730074359:function:6ef53e6a-624a-4593-a9ee-4bcf70083f52:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-IN": {
+          "privacyPolicyUrl": "https://www.termsfeed.com/privacy-policy/417daa263650ee4da13f524e0a19cdae"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

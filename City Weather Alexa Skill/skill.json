@@ -1,0 +1,51 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-IN": {
+          "summary": "Get Weather helps you to know the weather and temperature of a city.",
+          "examplePhrases": [
+            "Alexa open get weather",
+            "Alexa start get weather",
+            "Alexa launch get weather"
+          ],
+          "keywords": [
+            "weather",
+            "forecast",
+            "weather",
+            "forecast",
+            "climate",
+            "getweather"
+          ],
+          "name": "Get Weather",
+          "description": "Get Weather helps you to know the weather and temperature of a city.",
+          "smallIconUri": "file://assets/images/en-IN_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-IN_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "open get weather\nweather of delhi",
+      "category": "WEATHER",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:897730074359:function:58ffbd13-bda9-462f-b7c4-d37737eef8ef:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-IN": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
